@@ -7,7 +7,7 @@ export default function RootLayout() {
     return (
         <SafeAreaView style={StyleSheet.container}>
             <StatusBar style="light" />
-            <Stack screenOptions={{ headerShown: false }} />
+            <Stack name = "index" screenOptions={{ headerShown: false }} />
             </SafeAreaView>
     );
 
