@@ -1,5 +1,6 @@
 import React from "react";
-import {SafeAreaView, View, Text, StyleSheet, TouchableOpacity} from "react-native";
+import {SafeAreaView, View, Text, StyleSheet, TouchableOpacity} from "react-native-safe-area-context";
+import Header from "../components/Header";
 
 export default function HomeScreen({navigation}) {
     function handlePress() {
@@ -8,12 +9,15 @@ export default function HomeScreen({navigation}) {
 
     return (
         <SafeAreaView style={StyleSheet.container}>
-            <View style={StyleSheet.content}>
-                <Text style={StyleSheet.title}>EM CARTAZ ❤️</Text>
-                <TouchableOpacity style={StyleSheet.button} onPress={handlePress}>
-                    <Text style={StyleSheet.buttonText}>Clique aqui ▶️ </Text>
+            <Header title={"Meu Aplicativo"} />
+             <View style={styles.content}>
+                <Text style={styles.title}>EM CARTAZ ❤️</Text>
+                 <Text style={styles.subtitle}>testando 👍</Text>
+
+                <TouchableOpacity style={styles.button} onPress={handlePress}>
+                    <Text style={styles.buttonText}>Clique aqui ▶️ </Text>
                 </TouchableOpacity>
-            </View>
+             </View>
         </SafeAreaView>
      )
 }
