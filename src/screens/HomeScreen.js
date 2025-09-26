@@ -5,7 +5,7 @@ import MoviesScroll from "../components/MoviesScroll";
 import Footer from "../components/Footer";
 import { getPopularMovies } from "../api/api";
 
-const {widht } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 export default function HomeScreen() {
     const [featuredMovie, setFeaturedMovie] = useState(null);

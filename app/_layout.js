@@ -1,16 +1,16 @@
 import React from "react";
 import { Stack } from "expo-router";
-import { SafeAreaView, StyleSheet } from "react-native-safe-area-context";
-import { StatusBar} from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 export default function RootLayout() {
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar style="light" />
-            <Stack name = "index" screenOptions={{ headerShown: false }} />
-            </SafeAreaView>
+            <Stack screenOptions={{ headerShown: false }} />
+        </SafeAreaView>
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#aa0846ff",
     }
-})
+});
