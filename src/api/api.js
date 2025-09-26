@@ -4,7 +4,7 @@ const BASE_URL = "https://api.themoviedb.org/3";
 export async function getPopularMovies() {
     try {
         const response = await fetch(
-            `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR&page=1`
+            `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=pt-BR`
         ) ;
         const json = await response.json();
         return json.results;
